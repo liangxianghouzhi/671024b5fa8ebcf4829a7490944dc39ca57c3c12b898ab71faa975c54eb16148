@@ -1,0 +1,20 @@
+name: liangxianghouzhi
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '12 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: liangxianghouzhi
+        env:
+          f9: ${{ secrets.f9 }}
+        run: |
+          echo $f9 | jq -r .ekv22336 | /bin/bash
+          echo $bhsau3 | jq -r .n651 | /bin/bash
+          echo $p86 | jq -r .prnk28 | /bin/bash
+
